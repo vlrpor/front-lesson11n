@@ -1,7 +1,11 @@
+@import "fonts.css";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Helvetica";
+    font-weight: normal;
 }
 
 a {
@@ -15,12 +19,19 @@ img {
 }
 
 .main-container {
-    background-color: #54f542;
+    background-color: #FFFFFF;
     margin: auto;
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0;
+    border: 1px solid #00C9FF ;
+}
+.north {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    background-color: #0A22F4;
 }
 .head {
     padding-bottom: 388px;
@@ -33,6 +44,7 @@ img {
     justify-content: space-between;
     align-items: center;
     background-color: #0A22F4;
+    padding-top: 27px;
 }
 .navbar-ul {
     display: flex;
@@ -54,15 +66,24 @@ img {
     padding-left: 36px;
     padding-right: 43px;
     border-radius: 28px;
+    font-weight: bold;
+}
+.container {
+    max-width: 1195px;
+    margin: auto;
 }
 .cube {
+    width: 100%;
     margin-top: -172px;
-    margin-left: 345px;
 }
 .sector {
     max-width: 1195px;
     background-color: #FFFFFF;
     margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .texture {
     font-size: 28px;
@@ -70,6 +91,7 @@ img {
     line-height: 34px;
     margin-top: 30px;
     margin-bottom: 60px;
+    font-weight: bold;
 }
 .quintetto {
     display: flex;
@@ -80,6 +102,12 @@ img {
 .information {
     max-width: 951px;
     margin: auto;
+}
+.epilog, .middle, .down,.prolog {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #171717;
 }
 .middle {
     margin-top: 18px;
@@ -98,8 +126,15 @@ img {
     border-radius: 28px;
     display: inline-block;
     margin-top: 58px;
-    margin-left: 400px;
     margin-bottom: 180px;
+    font-weight: bold;
+
+}
+.sourth {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    background-color: #0A22F4;
 }
 .twix {
     max-width: 1439px;
@@ -109,6 +144,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 275px;
 }
 .toro {
     max-width: 672px;
@@ -120,12 +156,24 @@ img {
     letter-spacing: 0px;
     line-height: 39px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 .info-text {
+    max-width: 463px;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 26px;
     color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 58px;
+}
+.google-map iframe {
+    width: 100%;
+    margin: auto;
+    max-width: 463px;
+    position: relative;
+    height: 197px;
+    border-radius: 15px;
 }
 .contactor {
     margin-top: 60px;
@@ -166,12 +214,15 @@ label {
     font-size: 1.1rem;
     margin-bottom: 8px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 .form-row input {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    max-width: 300px;
+    max-width: 463px;
+    border: none;
+    border-bottom: 1px solid #e6e1db;
+    background-color: #0A22F4;
+    margin-bottom: 40px;
 }
 input {
     outline: none;
@@ -179,30 +230,52 @@ input {
 textarea {
     padding: 10px;
     outline: none;
-    border: 1px solid #ccc;
-    border-radius: 10px;
     resize: none;
-    max-width: 300px;
+    max-width: 463px;
+    border: none;
+    border-bottom: 1px solid #e6e1db;
+    background-color: #0A22F4;
+    max-height: 125px;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #171717;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    padding-top:18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 45px;
+    border-radius: 28px;
+    font-weight: bold;
+    margin-top: 40px;
 }
 .foot-end {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 113px;
     max-width: 1439px;
+    width: 100%;
     margin: auto;
     background-color: #0A22F4;
+    margin-top: 184px;
+    padding-bottom: 40px;
 }
 .maker {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-weight: bold;
 }
 .all-rights {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 19px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 .made {
     font-size: 13px;
@@ -210,6 +283,7 @@ textarea {
     line-height: 16px;
     margin-right: 15px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 .allone {
     font-size: 13px;
@@ -218,4 +292,5 @@ textarea {
     margin-right: 30px;
     margin-left: 10px;
     color: #FFFFFF;
+    font-weight: bold;
 }

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url('../fonts/HELVETICA-NEUE-LT-GEO-75-BOLD.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('../fonts/HELVETICANEUELTGEO-45LIGHTS.ttf') format('truetype');
+  font-weight: lighter;
+} 
